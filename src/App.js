@@ -50,7 +50,7 @@ function App() {
     const deletedGuest = await response.json();
     console.log(deletedGuest);
     // filter the deleted guest from the array of guests
-    const removeGuest = guests.filter((guest) => guest.id !== deletedGuest.id);
+    const removeGuest = guests.filter((g) => g.id !== deletedGuest.id);
     setGuests(removeGuest);
   }
 

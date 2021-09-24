@@ -7,6 +7,8 @@
 
 html {
   background-image: url(https://image.gala.de/22086298/t/Cz/v17/w1440/r1.5/-/grillparty-bild.jpg);
+  background-image: no-repet;
+  background-size: cover;
 }
 
 /* Remove default margin */

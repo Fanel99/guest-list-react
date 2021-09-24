@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 1000px;
+  width: 700px;
   border-radius: 15px;
   max-width: 100%;
   min-height: 50vh;
@@ -46,9 +46,12 @@ export const Container = styled.div`
     padding: 5px;
     border-radius: 8px;
     margin-left: 30px;
+    transition: all 1s ease;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      background-color: #30cfd0;
+      color: #330867;
     }
   }
 
@@ -67,12 +70,19 @@ export const Container = styled.div`
 
     li {
       font-size: 20px;
+      margin-bottom: 10px;
     }
   }
   span button {
     margin-left: 10px;
     color: red;
-    font-size: 10px;
+    font-size: 8px;
     background-color: #fff;
+
+    &:hover {
+      background-color: #000;
+      color: red;
+      transform: scale(1);
+    }
   }
 `;
