@@ -1,17 +1,28 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 1000px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
+  border-radius: 15px;
   max-width: 100%;
+  min-height: 50vh;
   margin: 0 auto;
   text-align: center;
+  background: linear-gradient(
+    90deg,
+    #f0f8ff,
+    #eff4ff,
+    #f3efff,
+    #fbe9fa,
+    #ffe3f0,
+    #ffdfe1,
+    #ffdcd1,
+    #ffdcc2
+  );
 
   h1 {
     font-size: 70px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
     -webkit-background-clip: text;

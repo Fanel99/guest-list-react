@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     async function fetchUserData() {
-      const response = await fetch(`${baseUrl}`);
+      const response = await fetch(baseUrl);
       // parsing the data
       const res = await response.json();
       setGuests(res);
@@ -26,7 +26,7 @@ function App() {
   // Creating Guest using POST
 
   async function createNewGuest() {
-    const response = await fetch(`${baseUrl}`, {
+    const response = await fetch(baseUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
