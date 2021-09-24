@@ -1,5 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import { Container } from './components/styles/container.styled';
 
 const baseUrl = 'https://rest-guest-list-api.herokuapp.com';
 
@@ -71,7 +72,7 @@ function App() {
   function handleAttending(id, attending) {
     // update Attendance checkbox in the frontend
     const copyGuests = [...guests];
-    const guestFound = copyGuests.find((g) => g.id === id);
+    const guestFound = copyGuests.find((guest) => guest.id === id);
     // update attending property of guestFound to the currentTarget.checked
     guestFound.attending = attending;
     updateGuest(guestFound);
@@ -80,12 +81,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <Container>
       <div>
         <h1>Grill Party</h1>
       </div>
       <div>
-        <h2>Join the Grill</h2>
         <input
           id="firstName"
           value={firstName}
@@ -148,7 +148,7 @@ function App() {
           })}
         </ul>
       </div>
-    </div>
+    </Container>
   );
 }
 
