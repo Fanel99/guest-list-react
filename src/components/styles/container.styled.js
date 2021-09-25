@@ -41,8 +41,8 @@ export const Container = styled.div`
   }
 
   button {
-    color: #30cfd0;
-    background-color: #330867;
+    color: #330867;
+    background-color: #30cfd0;
     padding: 5px;
     border-radius: 8px;
     margin-left: 30px;
@@ -50,8 +50,7 @@ export const Container = styled.div`
 
     &:hover {
       transform: scale(1.1);
-      background-color: #30cfd0;
-      color: #330867;
+      opacity: 0.7;
     }
   }
 
@@ -69,7 +68,7 @@ export const Container = styled.div`
     list-style: none;
 
     li {
-      font-size: 20px;
+      font-size: 30px;
       margin-bottom: 10px;
     }
   }
