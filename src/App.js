@@ -122,26 +122,22 @@ function App() {
             return (
               <li key={guest.id}>
                 {guest.firstName} {guest.lastName}{' '}
-                <span>
-                  <input
-                    type="checkbox"
-                    id="attending"
-                    checked={guest.attending}
-                    onChange={(event) =>
-                      handleAttending(guest.id, event.currentTarget.checked)
-                    }
-                  />
-                </span>
-                <span>
-                  <label htmlFor="attending">Attending</label>
-                  <button
-                    onClick={() => {
-                      deleteGuest(guest);
-                    }}
-                  >
-                    X
-                  </button>
-                </span>
+                <input
+                  type="checkbox"
+                  id="attending"
+                  checked={guest.attending}
+                  onChange={(event) =>
+                    handleAttending(guest.id, event.currentTarget.checked)
+                  }
+                />
+                <label htmlFor="attending">Attending</label>
+                <button
+                  onClick={() => {
+                    deleteGuest(guest);
+                  }}
+                >
+                  X
+                </button>
               </li>
             );
           })}

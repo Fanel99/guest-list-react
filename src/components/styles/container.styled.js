@@ -65,22 +65,26 @@ export const Container = styled.div`
 
   ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 
     li {
       font-size: 30px;
       margin-bottom: 10px;
     }
-  }
-  span button {
-    margin-left: 10px;
-    color: red;
-    font-size: 8px;
-    background-color: #fff;
-
-    &:hover {
-      background-color: #000;
+    button {
+      margin-left: 20px;
       color: red;
-      transform: scale(1);
+      font-size: 12px;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #000;
+        color: red;
+        transform: scale(1);
+      }
     }
   }
 `;
