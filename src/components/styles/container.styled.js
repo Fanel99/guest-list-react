@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 import styled from 'styled-components';
 
 export const Container = styled.div`

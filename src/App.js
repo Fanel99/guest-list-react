@@ -1,6 +1,4 @@
 import './App.css';
-import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import { Container } from './components/styles/container.styled';
 
@@ -135,8 +133,6 @@ function App() {
                   />
                 </span>
                 <span>
-                  {' '}
-                  <FontAwesomeIcon icon={faCheckSquare} />
                   <label htmlFor="attending">Attending</label>
                   <button
                     onClick={() => {
